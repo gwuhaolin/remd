@@ -22,6 +22,10 @@ export default class Remd extends PureComponent {
     children: PropTypes.string,
   }
 
+  static defaultProps = {
+    children: '',
+  }
+
   constructor(props) {
     super(props);
     const { children } = this.props;
