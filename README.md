@@ -6,7 +6,6 @@
 react markdown component
 
 ## install
-use it from npm
 ```bash
 npm i remd
 ```
