@@ -7,6 +7,15 @@ import marked from 'marked';
  */
 export default class Remd extends PureComponent {
 
+  /**
+   * setting marked options with default values
+   * @see https://github.com/chjj/marked#usage
+   * @param options
+   */
+  static setMarkedOptions = (options) => {
+    marked.setOptions(options);
+  }
+
   static propTypes = {
     /**
      * append className to Redemo

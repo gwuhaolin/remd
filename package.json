@@ -1,6 +1,6 @@
 {
   "name": "remd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react markdown component",
   "keywords": [
     "react",
@@ -9,10 +9,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open",
-    "doc:pub": "NODE_ENV=production webpack --config webpack-dist.config.js && rm -rf .doc",
-    "npm:js": "BABEL_ENV=dist babel src/ --out-dir .npm/ --source-maps",
-    "npm:pub": "npm run npm:js && cp ./package.json .npm/ && npm publish .npm/ && rm -rf .npm"
+    "dev": "webpack-dev-server --config webpack-doc-dev.config.js --open",
+    "pub:doc": "NODE_ENV=production webpack --config webpack-doc-dist.config.js && rm -rf .doc",
+    "pub:npm": "webpack --config webpack-npm.config.js && cp package.json .npm && npm publish .npm && rm -rf .npm"
   },
   "author": "gwuhaolin",
   "license": "ISC",
@@ -22,7 +21,6 @@
     "react": "^15.5.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -43,6 +41,7 @@
     "style-loader": "^0.18.0",
     "web-webpack-plugin": "^1.5.8",
     "webpack": "^2.6.0",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-node-externals": "^1.6.0"
   }
 }
