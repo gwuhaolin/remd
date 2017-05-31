@@ -12,7 +12,6 @@ module.exports = {
   output: {
     path: outputPath,
     filename: '[name].js',
-    library: 'remd',
     libraryTarget: 'commonjs2',
   },
   resolve: {
