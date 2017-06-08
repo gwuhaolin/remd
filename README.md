@@ -19,9 +19,7 @@ export default class extends PureComponent {
 
   render() {
     return (
-      <Remd>
-        # hello,remd
-      </Remd>
+      <Remd># hello,remd</Remd>
     )
   }
 }
