@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/gwuhaolin/remd.svg?style=flat-square)](https://npmjs.org/package/remd)
 
 # remd
-react markdown component
+react markdown component base on fast [marked](https://github.com/chjj/marked)
 
 ## install
 ```bash

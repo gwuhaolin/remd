@@ -8,11 +8,11 @@ import marked from 'marked';
 export default class Remd extends PureComponent {
 
   /**
-   * setting marked options with default values
-   * @see https://github.com/chjj/marked#usage
+   * setting Marked options with default values
    * @param options
+   * @see https://github.com/chjj/marked#options-1
    */
-  static setMarkedOptions = (options) => {
+  static setMarkedOptions = function (options) {
     marked.setOptions(options);
   }
 
